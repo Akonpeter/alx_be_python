@@ -1,5 +1,8 @@
 # Define the variables
 
+# length of th rectangle
+# width of the rectangle
+
 length = 10
 width = 5
 
