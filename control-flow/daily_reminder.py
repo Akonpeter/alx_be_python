@@ -1,51 +1,25 @@
-# # daily_reminder.py
+# Daily_Reminder 
 
-# # Prompt the user for task details
-# task = input("Enter your task: ")
-# priority = input(" Priority (high/medium/low): "). lower()
-# time_bound = input("Is it time-bound? (yes/no): ").lower()
+# Prompt the user for task 
 
-# # Match Case for priority
-# match priority:
-#     case "high":
-#         reminder = f"Reminder: '{task}' is a HIGH priority task."
-#     case "medium":
-#         reminder = f"Reminder: '{task}' is a MEDIUM priority task."
-#     case "low":
-#         reminder = f"Note: '{task}' is a LOW priority task. Consider completing it when you have free time."
-#     case _:
-#         reminder = f"Reminder: '{task}' has an UNKNOWN priority level."
-
-# # Add time-sensitive note
-# if  time_bound == "yes":
-#     reminder += "This task requires immediate attention today!"
-
-
-#  # Display the reminder
-#     print (reminder)
-
-
-# daily_reminder.py
-
-# Prompt the user for task details
-Task = input("Enter your task: ")
-Priority = input("Enter the task priority (high/medium/low): ").lower()
-Time_bound = input("Is it time-bound? (yes/no): ").lower()
+task = input("Enter your task: ")
+priority = input("Enter the task priority (high/low): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Match Case for priority
-match Priority:
-    case "high":
-        reminder = f"Reminder: '{Task}' is a high priority task."
-    case "medium":
-        reminder = f"Reminder: '{Task}' is a MEDIUM priority task."
-    case "low":
-        reminder = f"Note: '{Task}' is a low priority task. Consider completing it when you have free time."
-    case _:
-        reminder = f"Reminder: '{Task}' has an UNKNOWN priority level."
 
+match priority:
+
+    case "high":
+        reminder = f"Reminder: '{task}' is a high priority task."
+   
+    case "low":
+        reminder = f"Note: '{task}' is a low priority task. Consider completing it when you have free time.!"
+    
 # Add time-sensitive note
-if Time_bound == "yes":
-    reminder += " This task requires immediate attention today!"
+
+if time_bound == "yes":
+    reminder += " That requires immediate attention today!"
 
 # Display the customized reminder
 print(reminder)
