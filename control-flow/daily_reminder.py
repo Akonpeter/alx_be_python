@@ -18,7 +18,7 @@ match priority:
 
 # Add time-sensitive note
 if time_bound == "yes":
-    reminder += "that requires immediate attention today!"
+    reminder += "This task requires immediate attention today!"
 
 # Display the customized reminder
 print(reminder)
