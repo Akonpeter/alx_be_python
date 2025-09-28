@@ -1,10 +1,10 @@
 # shopping_list_manager.py
 
 def display_menu():
-    print("\n--- Shopping List Manager ---")
-    print("1. Add an item")
-    print("2. Remove an item")
-    print("3. View shopping list")
+    print(" Shopping List Manager")
+    print("1. Add  item")
+    print("2. Remove  item")
+    print("3. View list")
     print("4. Exit")
 
 
@@ -13,7 +13,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ")
+        choice = input("Enter your choice: ")
 
         if choice == "1":  # Prompt for add an item
 
