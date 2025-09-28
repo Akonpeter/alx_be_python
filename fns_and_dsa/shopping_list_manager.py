@@ -55,7 +55,7 @@ def main():
     shopping_list = []  # Start with an empty shopping list
 
     while True:
-        print("\n--- Shopping List Manager ---")
+        print(f" Shopping List Manager")
         print("1. Add an item")
         print("2. Remove an item")
         print("3. View shopping list")
@@ -88,7 +88,7 @@ def main():
                 print(" Your shopping list is currently empty.")
 
         elif choice == "4":
-            print(" Exiting Shopping List Manager. Goodbye!")
+            print(" Goodbye!")
             break
 
         else:
