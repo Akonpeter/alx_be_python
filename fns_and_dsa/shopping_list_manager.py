@@ -1,7 +1,7 @@
 # shopping_list_manager.py
 
 def display_menu():
-    print(f" Shopping List Manager")
+    print(" Shopping List Manager")
     print("1. Add item")
     print("2. Remove  item")
     print("3. View list")
@@ -9,7 +9,7 @@ def display_menu():
 
 
 def main():
-    shopping_list = []  # Start with an empty shopping list
+    shopping_list = []  
 
     while True:
         display_menu()
