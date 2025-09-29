@@ -1,7 +1,6 @@
   # Arithmetic_operations.py
 
-
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation (num1: float, num2: float, operation: str):
     match operation.lower():
         case "add":
             return num1 + num2
