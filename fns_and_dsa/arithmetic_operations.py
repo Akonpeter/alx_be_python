@@ -1,4 +1,5 @@
-# Arithmetic_operations.py
+  # Arithmetic_operations.py
+
 
 def perform_operation(num1: float, num2: float, operation: str):
     match operation.lower():
@@ -14,7 +15,3 @@ def perform_operation(num1: float, num2: float, operation: str):
             return num1 / num2
         case _:
             return "Error: Invalid operation"
-        
-
-
-
