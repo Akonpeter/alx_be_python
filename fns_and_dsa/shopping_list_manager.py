@@ -106,7 +106,7 @@
 # shopping_list_manager.py
 
 def display_menu():
-    print("\nShopping List Manager")
+    print(f"Shopping List Manager")
     print("1. Add item")
     print("2. Remove item")
     print("3. View list")
@@ -133,7 +133,7 @@ def remove_item(shopping_list):
 
 def view_list(shopping_list):
     if shopping_list:
-        print("\nYour Shopping List:")
+        print("Your Shopping List:")
         for i, item in enumerate(shopping_list, start=1):
             print(f"{i}. {item}")
     else:
@@ -144,7 +144,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ").strip()
+        choice = input("Enter your choice: ").strip()
 
         if choice == "1":
             add_item(shopping_list)
@@ -156,7 +156,7 @@ def main():
             print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 4.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
