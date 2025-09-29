@@ -1,11 +1,12 @@
 #shopping_list_manager.py
 
 def display_menu():
-    print("\n Shopping List Manager")
+    print(f" Shopping List Manager")
     print("1. Add item")
     print("2. Remove  item")
     print("3. View list")
     print("4. Exit")
+   
 
 
 def main():
@@ -66,7 +67,7 @@ def main():
 
         if choice == "1":
             # Prompt for and add an item
-            
+
             item = input("Enter the item to add: ").strip()
             if item:
                 shopping_list.append(item)
