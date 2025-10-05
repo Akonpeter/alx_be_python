@@ -2,7 +2,8 @@
 # test_simple_calculator.py
 
 import unittest
-from  simple_calculator import SimpleCalculator
+from simple_calculator import SimpleCalculator
+
 
 
 class TestSimpleCalculator(unittest.TestCase):
