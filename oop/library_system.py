@@ -6,7 +6,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return f"Book: '{self.title}' by {self.author}"
+        return f"Book: {self.title} by {self.author}"
 
 
 class EBook(Book):
@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def __str__(self):
-        return f"EBook: '{self.title}' by {self.author}, File Size: {self.file_size}MB"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 class PrintBook(Book):
@@ -24,7 +24,7 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def __str__(self):
-        return f"PrintBook: '{self.title}' by {self.author}, Pages: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
@@ -33,12 +33,8 @@ class Library:
 
     def add_book(self, book):
         self.books.append(book)
-        print(f"Added '{book.title}' to the library.")
+        # Removed print statements to match expected output
 
     def list_books(self):
-        if not self.books:
-            print("No books in the library yet.")
-        else:
-            print("Books in the library:")
-            for book in self.books:
-                print(book)  # This automatically calls book.__str__()
+        for book in self.books:
+            print(book)
